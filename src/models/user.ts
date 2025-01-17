@@ -8,7 +8,7 @@ const UserSchema = new Schema(
       required: [true, "Email es requerido"],
       match: [
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-        "Email is invalid",
+        "Email no es válido",
       ],
     },
     password: {
